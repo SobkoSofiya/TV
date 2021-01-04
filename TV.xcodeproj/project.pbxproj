@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		C36447A025A0848C007AF157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C364479E25A0848C007AF157 /* LaunchScreen.storyboard */; };
 		C36447AB25A0848D007AF157 /* TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36447AA25A0848D007AF157 /* TVTests.swift */; };
 		C36447B625A0848D007AF157 /* TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36447B525A0848D007AF157 /* TVUITests.swift */; };
+		C36447EE25A08670007AF157 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C36447ED25A08670007AF157 /* SwiftyJSON */; };
+		C36447F425A08694007AF157 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C36447F325A08694007AF157 /* Alamofire */; };
+		C36448C925A31D0D007AF157 /* GymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36448C825A31D0D007AF157 /* GymView.swift */; };
+		C36448D425A3252D007AF157 /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36448D325A3252D007AF157 /* Sign Up.swift */; };
+		C36449B925A32F3E007AF157 /* Swift2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36449B825A32F3E007AF157 /* Swift2.swift */; };
+		C36449BE25A32FA6007AF157 /* GymModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36449BD25A32FA6007AF157 /* GymModel.swift */; };
+		C36449C925A3309A007AF157 /* SignOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36449C825A3309A007AF157 /* SignOutView.swift */; };
+		C36449D125A3313F007AF157 /* GymViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36449D025A3313F007AF157 /* GymViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,12 @@
 		C36447B125A0848D007AF157 /* TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36447B525A0848D007AF157 /* TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUITests.swift; sourceTree = "<group>"; };
 		C36447B725A0848D007AF157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36448C825A31D0D007AF157 /* GymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymView.swift; sourceTree = "<group>"; };
+		C36448D325A3252D007AF157 /* Sign Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
+		C36449B825A32F3E007AF157 /* Swift2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift2.swift; sourceTree = "<group>"; };
+		C36449BD25A32FA6007AF157 /* GymModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymModel.swift; sourceTree = "<group>"; };
+		C36449C825A3309A007AF157 /* SignOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutView.swift; sourceTree = "<group>"; };
+		C36449D025A3313F007AF157 /* GymViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36447EE25A08670007AF157 /* SwiftyJSON in Frameworks */,
+				C36447F425A08694007AF157 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +115,12 @@
 			children = (
 				C364479525A0848A007AF157 /* AppDelegate.swift */,
 				C364479725A0848A007AF157 /* ContentView.swift */,
+				C36449B825A32F3E007AF157 /* Swift2.swift */,
+				C36449BD25A32FA6007AF157 /* GymModel.swift */,
+				C36449D025A3313F007AF157 /* GymViewModel.swift */,
+				C36448C825A31D0D007AF157 /* GymView.swift */,
+				C36448D325A3252D007AF157 /* Sign Up.swift */,
+				C36449C825A3309A007AF157 /* SignOutView.swift */,
 				C364479925A0848C007AF157 /* Assets.xcassets */,
 				C364479E25A0848C007AF157 /* LaunchScreen.storyboard */,
 				C36447A125A0848C007AF157 /* Info.plist */,
@@ -149,6 +171,10 @@
 			dependencies = (
 			);
 			name = TV;
+			packageProductDependencies = (
+				C36447ED25A08670007AF157 /* SwiftyJSON */,
+				C36447F325A08694007AF157 /* Alamofire */,
+			);
 			productName = TV;
 			productReference = C364479225A0848A007AF157 /* TV.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +246,10 @@
 				Base,
 			);
 			mainGroup = C364478925A0848A007AF157;
+			packageReferences = (
+				C36447EC25A08670007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C36447F225A08694007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C364479325A0848A007AF157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C364479825A0848A007AF157 /* ContentView.swift in Sources */,
+				C36449C925A3309A007AF157 /* SignOutView.swift in Sources */,
+				C36448C925A31D0D007AF157 /* GymView.swift in Sources */,
+				C36448D425A3252D007AF157 /* Sign Up.swift in Sources */,
+				C36449BE25A32FA6007AF157 /* GymModel.swift in Sources */,
+				C36449B925A32F3E007AF157 /* Swift2.swift in Sources */,
+				C36449D125A3313F007AF157 /* GymViewModel.swift in Sources */,
 				C364479625A0848A007AF157 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +623,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36447EC25A08670007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C36447F225A08694007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36447ED25A08670007AF157 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36447EC25A08670007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C36447F325A08694007AF157 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36447F225A08694007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C364478A25A0848A007AF157 /* Project object */;
 }
